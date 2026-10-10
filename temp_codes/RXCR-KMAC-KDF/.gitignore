@@ -1,0 +1,54 @@
+# ───── Python ─────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+*.coverage
+.coverage*
+htmlcov/
+.cache/
+.mypy_cache/
+.pytype/
+env/
+venv/
+.venv/
+ENV/
+.build/
+dist/
+*.egg-info/
+
+# VS Code / IDE
+.vscode/
+.idea/
+
+# ───── C / build artifacts ───────────────
+# Generic
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.out
+*.log
+
+# CMake / Make
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+
+# ───── OS junk ───────────────────────────
+.DS_Store
+Thumbs.db
+
+# ───── data ───────────────────────────
+python/tests/sts/data/kem_keypair.json
+python/tests/sts/data/*.key
+python/tests/sts/data/*.secret

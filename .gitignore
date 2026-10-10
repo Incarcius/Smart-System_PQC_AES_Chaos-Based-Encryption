@@ -1,0 +1,29 @@
+# Build output
+build/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.o
+*.a
+*.so
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated key material and protocol state.
+#
+# These MUST NOT be committed: the .bin files include ML-KEM and ML-DSA
+# PRIVATE keys, and the epoch counters are replay-protection state. Committing
+# an epoch counter and then restoring it on another machine would roll the
+# gateway backwards and reopen the replay window it exists to close.
+*_sk.bin
+*_root_epoch.txt
+
+# ACCM keystream corpora (regenerate with tools/build_tests.bat +
+# accm_stream_gen.exe; they are large and reproducible)
+*.bin.gz
+accm_*.bin

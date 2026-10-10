@@ -1,0 +1,74 @@
+[
+  {
+    "label": "empty-pt-empty-aad",
+    "key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "iv": "000000000000000000000000",
+    "aad": "",
+    "pt": "",
+    "ct": "",
+    "tag": "530f8afbc74536b9a963b4f1c4cb738b"
+  },
+  {
+    "label": "empty-pt-with-aad",
+    "key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "iv": "000000000000000000000000",
+    "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+    "pt": "",
+    "ct": "",
+    "tag": "6605ba8cc3d0e5864e8d04e07bfc8b36"
+  },
+  {
+    "label": "one-block-aes-256-vector",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "",
+    "pt": "d9313225f88406e5a55909c5aff5269a",
+    "ct": "522dc1f099567d07f47f37a32a84427d",
+    "tag": "7ea353da7e9241a1d90d693a4954186b"
+  },
+  {
+    "label": "multi-block-16-18-22",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "",
+    "pt": "d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255",
+    "ct": "522dc1f099567d07f47f37a32a84427d643a8cdcbfe5c0c97598a2bd2555d1aa8cb08e48590dbb3da7b08b1056828838c5f61e6393ba7a0abcc9f662898015ad",
+    "tag": "b094dac5d93471bdec1a502270e3cc6c"
+  },
+  {
+    "label": "multi-block-full-aad",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+    "pt": "d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd255",
+    "ct": "522dc1f099567d07f47f37a32a84427d643a8cdcbfe5c0c97598a2bd2555d1aa8cb08e48590dbb3da7b08b1056828838c5f61e6393ba7a0abcc9f662898015ad",
+    "tag": "2df7cd675b4f09163b41ebf980a7f638"
+  },
+  {
+    "label": "64-byte-pt-no-aad",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "",
+    "pt": "d9313225f88406e5a55909c5aff5269a86a7a9531534f7da2e4c303d8a318a721c3c0c95956809532fcf0e2449a6b525b16aedf5aa0de657ba637b391aafd25522",
+    "ct": "522dc1f099567d07f47f37a32a84427d643a8cdcbfe5c0c97598a2bd2555d1aa8cb08e48590dbb3da7b08b1056828838c5f61e6393ba7a0abcc9f662898015ad46",
+    "tag": "9c8a0f338a158849ff10937ac859c535"
+  },
+  {
+    "label": "short-7-byte-pt",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "feedfacedeadbeeffeedfacedeadbeefabaddad2",
+    "pt": "deadbeef",
+    "ct": "55b14d3a",
+    "tag": "8eb8dfbe21a81993011f460384374084"
+  },
+  {
+    "label": "24-byte-aad-3-pt",
+    "key": "feffe9928665731c6d6a8f9467308308feffe9928665731c6d6a8f9467308308",
+    "iv": "cafebabefacedbaddecaf888",
+    "aad": "feedfacedeadbeeffeedfacedeadbeef",
+    "pt": "deadbeef",
+    "ct": "55b14d3a",
+    "tag": "d606a0ee871c6646b292ae33688e149e"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "best_epoch": 34,
+  "best_val_loss": 0.9173731803894043,
+  "epochs_run": 46,
+  "seconds": 374.5332124233246,
+  "n_features": 128,
+  "window": 60,
+  "sample_hz": 120.0,
+  "latent": 16,
+  "calibration_windows": 1034,
+  "counts": {
+    "no-event": 3520,
+    "natural": 1654,
+    "attack": 5743
+  },
+  "trained_on": [
+    0,
+    1
+  ],
+  "thresholds": {
+    "0.02": 4.2636857032775906,
+    "0.05": 2.8586624860763528,
+    "0.15": 1.2622921347618101
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "cold_start": {
+    "posture_after_warmup": "SUSPICIOUS",
+    "note": "blind detector at start-up -> policy escalates. Fail-secure."
+  },
+  "normal": {
+    "cycles": 70,
+    "batches": 132,
+    "rejected": 0,
+    "final_score": 0.2125,
+    "posture": "NORMAL"
+  },
+  "attack": {
+    "score_quiet": 0.5125,
+    "score_attacked": 1.0,
+    "posture_before": "NORMAL",
+    "posture_after": "ANOMALY",
+    "rotations": 0,
+    "echo_violations": 0
+  },
+  "control_cut": {
+    "posture_before": "NORMAL",
+    "after_one_lapse": "SUSPICIOUS",
+    "after_two_lapses": "ANOMALY",
+    "auto_quarantined": 0,
+    "telemetry_still_collected": 5
+  },
+  "quarantine": {
+    "score_at_quarantine": 0.0375,
+    "untrusted": [
+      2
+    ],
+    "trusted": [
+      0,
+      1,
+      3,
+      4
+    ],
+    "released": true
+  },
+  "latency": {
+    "cycle_median_ms": 52.05030000001898,
+    "cycle_p95_ms": 129.68362499997852,
+    "detector_ms": 4.139299999906143,
+    "budget_ms": 1000.0,
+    "fraction_of_budget": 0.12968362499997851
+  }
+}

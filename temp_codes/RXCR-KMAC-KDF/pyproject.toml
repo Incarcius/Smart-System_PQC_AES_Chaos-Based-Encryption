@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rxcr-kmac-kdf"
+version = "0.1.0"
+description = "Reference implementation of the RXCR-KMAC extract-then-expand KDF for high-entropy post-quantum KEM secrets."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Hriday Patel", email = "hridaympatel@gmail.com" }
+]
+
+# Core runtime dependencies of the Python reference implementation.
+# liboqs/liboqs-python are documented in README because they depend
+# on an external C library rather than pure pip install.
+dependencies = [
+  "pysha3; python_version < '3.11'"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[tool.setuptools]
+packages = ["python"]
+
+[tool.setuptools.package-dir]
+"" = "python"
+
+[tool.setuptools.exclude-package-data]
+"*" = ["tests/*", "tests/sts/data/*"]
